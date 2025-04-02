@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HA Sport - Ski Beyond Your Limits</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Syne:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="main-header">
+        <div class="logo-container">
+          <h1 class="logo-text">HA SPORT</h1>
+          <div class="logo-underline"></div>
+        </div>
+        <nav class="main-nav">
+          <a href="#" class="nav-link">HOME</a>
+          <a href="#" class="nav-link desktop-control" id="catalog-link">CATALOGS</a>
+          <a href="#" class="nav-link">BLOG</a>
+          <a href="#" class="nav-link">SHOP</a>
+          <a href="#" class="nav-link">CONTACT US</a>
+        </nav>
+        <div class="header-icons">
+          <svg
+            width="227"
+            height="39"
+            viewBox="0 0 227 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="header-icons-group"
+          >
+            <path
+              d="M23.1635 25.4345L22.8468 25.1174L22.497 25.3976C21.4922 26.2026 20.3327 26.8433 19.0141 27.3173C17.7051 27.7879 16.3086 28.0247 14.821 28.0247C11.1316 28.0247 8.02789 26.7511 5.47915 24.1987C2.92891 21.6449 1.65625 18.5357 1.65625 14.8405C1.65625 11.1452 2.92891 8.03604 5.47915 5.48218C8.02789 2.92981 11.1316 1.65625 14.821 1.65625C18.5104 1.65625 21.6148 2.92976 24.1649 5.48209C26.7138 8.03593 27.9858 11.1451 27.9858 14.8405C27.9858 16.3304 27.7493 17.7292 27.2793 19.0402C26.8059 20.3608 26.1661 21.5221 25.3622 22.5284L25.0833 22.8775L25.399 23.1938L37.2243 35.0359C37.5131 35.3251 37.6562 35.6704 37.6562 36.1036C37.6562 36.524 37.5048 36.8905 37.1718 37.224C36.8892 37.5069 36.5303 37.6562 36.054 37.6562C35.5776 37.6562 35.2187 37.5069 34.9362 37.224L23.1635 25.4345ZM21.8767 21.9055L21.877 21.9052C23.8105 19.9675 24.7812 17.6028 24.7812 14.8405C24.7812 12.0781 23.8105 9.7134 21.877 7.77571L21.8767 7.77544C19.9418 5.83921 17.5801 4.86678 14.821 4.86678C12.0619 4.86678 9.70026 5.83921 7.76531 7.77544L7.76504 7.77571C5.83158 9.7134 4.8608 12.0781 4.8608 14.8405C4.8608 17.6028 5.83158 19.9675 7.76504 21.9052L7.76531 21.9055C9.70026 23.8417 12.0619 24.8141 14.821 24.8141C17.5801 24.8141 19.9418 23.8417 21.8767 21.9055Z"
+              fill="#07272E"
+              stroke="black"
+              class="icon-header"
+            ></path>
+            <path
+              d="M76.9406 32.9793L76.9406 32.9793L76.9474 32.9858C77.2916 33.3145 77.6957 33.5707 78.1347 33.7433C78.5702 33.9146 79.0338 34.0012 79.5 34C79.9662 34.0012 80.4298 33.9146 80.8653 33.7433C81.3043 33.5707 81.7084 33.3145 82.0526 32.9858L82.0526 32.9858L82.0594 32.9793L94.8782 20.6225L94.8782 20.6225L94.8847 20.6162C96.8713 18.6837 98 16.0583 98 13.3059C98 10.5536 96.8713 7.92823 94.8847 5.99573L94.8847 5.9957L94.8752 5.98655C92.8745 4.06588 90.18 3 87.3859 3C84.5919 3 81.8974 4.06588 79.8967 5.98654L79.8947 5.9885L79.5 6.36845L79.1053 5.9885L79.1033 5.98654C77.1026 4.06588 74.4081 3 71.6141 3C68.82 3 66.1255 4.06588 64.1248 5.98654L64.1248 5.98651L64.1153 5.99573C62.1287 7.92823 61 10.5536 61 13.3059C61 16.0583 62.1287 18.6837 64.1153 20.6162L64.1153 20.6162L64.1218 20.6225L76.9406 32.9793Z"
+              stroke="black"
+              stroke-width="4"
+              class="icon-header"
+            ></path>
+            <g clip-path="url(#clip0_1_57)" class="icon-header">
+              <path
+                d="M129.122 27.935C130.695 26.7325 132.453 25.7841 134.395 25.0897C136.337 24.3966 138.372 24.05 140.5 24.05C142.628 24.05 144.663 24.3966 146.605 25.0897C148.548 25.7841 150.305 26.7325 151.878 27.935C152.957 26.6708 153.797 25.2371 154.399 23.6337C155 22.0304 155.3 20.3192 155.3 18.5C155.3 14.3992 153.859 10.907 150.977 8.02345C148.093 5.14115 144.601 3.7 140.5 3.7C136.399 3.7 132.908 5.14115 130.025 8.02345C127.142 10.907 125.7 14.3992 125.7 18.5C125.7 20.3192 126.001 22.0304 126.603 23.6337C127.203 25.2371 128.043 26.6708 129.122 27.935ZM140.5 20.35C138.681 20.35 137.147 19.7259 135.897 18.4778C134.649 17.2284 134.025 15.6942 134.025 13.875C134.025 12.0558 134.649 10.5216 135.897 9.2722C137.147 8.02407 138.681 7.4 140.5 7.4C142.319 7.4 143.853 8.02407 145.103 9.2722C146.351 10.5216 146.975 12.0558 146.975 13.875C146.975 15.6942 146.351 17.2284 145.103 18.4778C143.853 19.7259 142.319 20.35 140.5 20.35ZM140.5 37C137.941 37 135.536 36.5141 133.285 35.5422C131.034 34.5716 129.076 33.2538 127.411 31.5888C125.746 29.9238 124.428 27.9658 123.458 25.715C122.486 23.4642 122 21.0592 122 18.5C122 15.9408 122.486 13.5358 123.458 11.285C124.428 9.03417 125.746 7.07625 127.411 5.41125C129.076 3.74625 131.034 2.42782 133.285 1.45595C135.536 0.485317 137.941 0 140.5 0C143.059 0 145.464 0.485317 147.715 1.45595C149.966 2.42782 151.924 3.74625 153.589 5.41125C155.254 7.07625 156.572 9.03417 157.542 11.285C158.514 13.5358 159 15.9408 159 18.5C159 21.0592 158.514 23.4642 157.542 25.715C156.572 27.9658 155.254 29.9238 153.589 31.5888C151.924 33.2538 149.966 34.5716 147.715 35.5422C145.464 36.5141 143.059 37 140.5 37Z"
+                fill="#07272E"
+                class="icon-header"
+              ></path>
+            </g>
+            <path
+              d="M225.745 9.10804C225.36 8.55305 224.729 8.22211 224.055 8.22211H195.962L193.59 2.5283C192.949 0.990764 191.461 0 189.796 0H185V4.11106H189.796L199.547 27.5132C199.866 28.2779 200.614 28.7774 201.444 28.7774H217.888C218.746 28.7774 219.512 28.245 219.814 27.4454L225.981 11.0012C226.217 10.3681 226.129 9.66098 225.745 9.10804ZM216.464 24.6663H202.815L197.676 12.3332H221.089L216.464 24.6663Z"
+              fill="#07272E"
+              class="icon-header"
+            ></path>
+            <path
+              d="M202.472 36.9999C204.175 36.9999 205.555 35.6195 205.555 33.9166C205.555 32.2138 204.175 30.8333 202.472 30.8333C200.769 30.8333 199.389 32.2138 199.389 33.9166C199.389 35.6195 200.769 36.9999 202.472 36.9999Z"
+              fill="#07272E"
+              class="icon-header"
+            ></path>
+            <path
+              d="M216.86 36.9999C218.563 36.9999 219.944 35.6195 219.944 33.9166C219.944 32.2138 218.563 30.8333 216.86 30.8333C215.158 30.8333 213.777 32.2138 213.777 33.9166C213.777 35.6195 215.158 36.9999 216.86 36.9999Z"
+              fill="#07272E"
+              class="icon-header"
+            ></path>
+            <defs class="icon-header">
+              <clipPath id="clip0_1_57">
+                <rect
+                  width="37"
+                  height="37"
+                  fill="white"
+                  transform="translate(122)"
+                ></rect>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </header>
+
+      <section class="category-section">
+        <button class="mobile-close-btn">&times;</button>
+        <div class="container">
+          <div class="category-layout">
+            <nav class="category-sidebar">
+              <button class="category-item">
+                <span class="category-name">Activity</span>
+                <div class="icon-wrapper">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="arrow-icon rotated"
+                  >
+                    <path
+                      d="M9.52881 4.98774L17.0018 12.5147L9.47485 19.9876"
+                      stroke="#07272E"
+                      stroke-width="1.5"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="category-item">
+                <span class="category-name">Equipment</span>
+                <div class="icon-wrapper">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="arrow-icon rotated"
+                  >
+                    <path
+                      d="M9.52881 4.98774L17.0018 12.5147L9.47485 19.9876"
+                      stroke="#07272E"
+                      stroke-width="1.5"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="category-item">
+                <span class="category-name">Women's</span>
+                <div class="icon-wrapper">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="arrow-icon rotated"
+                  >
+                    <path
+                      d="M9.52881 4.98774L17.0018 12.5147L9.47485 19.9876"
+                      stroke="#07272E"
+                      stroke-width="1.5"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              <button class="category-item">
+                <span class="category-name">Men's</span>
+                <div class="icon-wrapper">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="arrow-icon rotated"
+                  >
+                    <path
+                      d="M9.52881 4.98774L17.0018 12.5147L9.47485 19.9876"
+                      stroke="#07272E"
+                      stroke-width="1.5"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </nav>
+            <div class="product-grid-container">
+              <div class="product-grid">
+                <article class="product-card">
+                  <img
+                    src="./image/image_catalog1.png"
+                    alt="Boots"
+                    class="product-image"
+                  />
+                  <h3 class="product-title">Boots</h3>
+                </article>
+                <article class="product-card">
+                  <img
+                    src="./image/image_catalog2.png"
+                    alt="Helmets"
+                    class="product-image"
+                  />
+                  <h3 class="product-title">Helmets</h3>
+                </article>
+                <article class="product-card">
+                  <img
+                    src="./image/image_catalog3.png"
+                    alt="Goggles"
+                    class="product-image"
+                  />
+                  <h3 class="product-title">Goggles</h3>
+                </article>
+                <article class="product-card">
+                  <img
+                    src="./image/image_catalog4.png"
+                    alt="Binding"
+                    class="product-image"
+                  />
+                  <h3 class="product-title">Binding</h3>
+                </article>
+                <article class="product-card">
+                  <img
+                    src="./image/image_catalog5.png"
+                    alt="Skis"
+                    class="product-image"
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main class="main-content">
+        <aside class="social-sidebar">
+          <div class="copyright-container">
+            <p class="copyright-text">©2023 Dotcreativemarket</p>
+          </div>
+          <div class="social-icons">
+            <svg
+              width="22"
+              height="309"
+              viewBox="0 0 22 309"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="social-icons-group"
+            >
+              <text
+                transform="translate(7.62939e-06 101) rotate(-90)"
+                fill="#CDFF9A"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="Syne"
+                font-size="18"
+                letter-spacing="0em"
+              >
+                <tspan x="0" y="16.85">FOLLOW US</tspan>
+              </text>
+
+              <path
+                d="M18.2727 133H3.72734C3.00401 133 2.3103 133.287 1.79882 133.798C1.28734 134.31 1 135.004 1 135.727L1 150.272C1 150.996 1.28734 151.689 1.79882 152.201C2.3103 152.712 3.00401 153 3.72734 153H18.2727C18.996 153 19.6897 152.712 20.2012 152.201C20.7127 151.689 21 150.996 21 150.272V135.727C21 135.004 20.7127 134.31 20.2012 133.798C19.6897 133.287 18.996 133 18.2727 133V133ZM7.81836 148.827C7.81857 148.939 7.77437 149.046 7.69549 149.125C7.6166 149.205 7.50948 149.249 7.39766 149.25H5.60078C5.54542 149.25 5.49056 149.239 5.43934 149.218C5.38812 149.197 5.34155 149.166 5.30229 149.127C5.26303 149.088 5.23186 149.042 5.21055 148.991C5.18925 148.939 5.17823 148.885 5.17812 148.829V141.295C5.17812 141.183 5.22265 141.075 5.30192 140.996C5.38118 140.917 5.48869 140.872 5.60078 140.872H7.39766C7.50958 140.873 7.61683 140.917 7.6959 140.996C7.77497 141.076 7.81943 141.183 7.81953 141.295L7.81836 148.827ZM6.49766 140.159C6.16048 140.159 5.83088 140.059 5.55054 139.871C5.2702 139.684 5.05171 139.418 4.92269 139.106C4.79368 138.795 4.75994 138.452 4.82575 138.121C4.89156 137.791 5.05395 137.487 5.2924 137.248C5.53084 137.01 5.83463 136.848 6.16533 136.782C6.49603 136.716 6.8388 136.75 7.15028 136.879C7.46177 137.008 7.72798 137.227 7.91524 137.507C8.10251 137.788 8.20234 138.117 8.20234 138.454C8.20234 138.678 8.15825 138.9 8.07257 139.107C7.9869 139.313 7.86133 139.501 7.70303 139.66C7.54473 139.818 7.3568 139.943 7.14998 140.029C6.94316 140.115 6.7215 140.159 6.49766 140.159ZM17.2109 148.856C17.2111 148.907 17.2013 148.958 17.182 149.005C17.1627 149.052 17.1343 149.095 17.0984 149.131C17.0625 149.167 17.0198 149.196 16.9729 149.215C16.9259 149.235 16.8755 149.245 16.8246 149.245H14.8887C14.786 149.245 14.6873 149.205 14.6145 149.132C14.5416 149.06 14.5004 148.962 14.5 148.859V145.328C14.5 144.801 14.6562 143.019 13.1215 143.019C11.934 143.019 11.6922 144.238 11.6441 144.786V148.861C11.6443 148.963 11.6041 149.061 11.5325 149.134C11.4608 149.207 11.3634 149.248 11.2613 149.25H9.39531C9.29254 149.25 9.19398 149.209 9.12131 149.136C9.04864 149.063 9.00781 148.965 9.00781 148.862V141.262C9.00745 141.211 9.01717 141.16 9.0364 141.113C9.05564 141.066 9.08401 141.023 9.1199 140.987C9.15579 140.95 9.19849 140.922 9.24555 140.902C9.29261 140.882 9.3431 140.872 9.39414 140.872H11.2613C11.3646 140.872 11.4634 140.913 11.5363 140.987C11.6091 141.06 11.65 141.159 11.65 141.262V141.919C12.091 141.255 12.7438 140.747 14.1387 140.747C17.2273 140.747 17.2066 143.631 17.2066 145.215L17.2109 148.856Z"
+                fill="white"
+                class="icon_follow_us"
+              ></path>
+              <path
+                d="M18.0703 185H3.92969C2.31439 185 1 186.314 1 187.929V202.07C1 203.685 2.31439 205 3.92969 205H9.82812V197.929H7.48438V194.414H9.82812V192.031C9.82812 190.092 11.4051 188.515 13.3438 188.515H16.8984V192.031H13.3438V194.414H16.8984L16.3125 197.929H13.3438V205H18.0703C19.6856 205 21 203.685 21 202.07V187.929C21 186.314 19.6856 185 18.0703 185Z"
+                fill="white"
+                class="icon_follow_us"
+              ></path>
+              <path
+                d="M19.8998 238.1C19.1666 237.366 18.2832 237 17.2503 237H4.75003C3.71712 237 2.83372 237.366 2.10018 238.1C1.36677 238.833 1 239.717 1 240.75V253.25C1 254.283 1.36677 255.166 2.10018 255.9C2.83372 256.633 3.71712 257 4.75003 257H17.2502C18.2831 257 19.1665 256.633 19.8997 255.9C20.6332 255.166 21 254.283 21 253.25V240.75C21 239.717 20.6332 238.833 19.8998 238.1ZM16.2997 244.695C16.3084 244.773 16.3128 244.89 16.3128 245.047C16.3128 245.776 16.2063 246.507 15.9938 247.241C15.7812 247.974 15.4556 248.677 15.0171 249.35C14.579 250.023 14.0559 250.618 13.4484 251.134C12.8406 251.65 12.1116 252.063 11.2607 252.371C10.4102 252.679 9.49858 252.833 8.52642 252.833C7.0161 252.833 5.61852 252.425 4.33373 251.609C4.54206 251.635 4.7592 251.648 4.98477 251.648C6.24352 251.648 7.37635 251.258 8.38335 250.476C7.79315 250.468 7.26571 250.286 6.80134 249.929C6.33683 249.574 6.01357 249.122 5.83123 248.575C6.05685 248.61 6.2261 248.627 6.33893 248.627C6.52988 248.627 6.75131 248.593 7.00296 248.523C6.3693 248.402 5.83552 248.087 5.40148 247.579C4.96735 247.071 4.75035 246.492 4.75035 245.841V245.815C5.21029 246.032 5.64433 246.145 6.05238 246.154C5.26242 245.624 4.86747 244.864 4.86747 243.875C4.86747 243.389 4.99325 242.929 5.245 242.495C5.9307 243.337 6.76421 244.009 7.74499 244.513C8.72586 245.016 9.77632 245.298 10.8961 245.359C10.8527 245.194 10.831 244.986 10.831 244.734C10.831 243.979 11.0979 243.334 11.6318 242.801C12.1656 242.267 12.8102 242 13.5653 242C14.3641 242 15.0283 242.286 15.5578 242.859C16.1568 242.746 16.7386 242.525 17.3027 242.195C17.0857 242.863 16.6818 243.371 16.0918 243.718C16.6559 243.64 17.1809 243.493 17.667 243.276C17.3024 243.831 16.8465 244.304 16.2997 244.695Z"
+                fill="white"
+                class="icon_follow_us"
+              ></path>
+              <path
+                d="M12.9127 299.014C12.9127 300.02 12.0975 300.835 11.0919 300.835C10.0864 300.835 9.27112 300.02 9.27112 299.014C9.27112 298.009 10.0864 297.194 11.0919 297.194C12.0975 297.194 12.9127 298.009 12.9127 299.014Z"
+                fill="white"
+                class="icon_follow_us"
+              ></path>
+              <path
+                d="M14.1456 293.552H8.04054C6.71165 293.552 5.63065 294.633 5.63065 295.962V302.067C5.63065 303.396 6.71165 304.477 8.04054 304.477H14.1456C15.4745 304.477 16.5555 303.396 16.5555 302.067V295.962C16.5555 294.633 15.4745 293.552 14.1456 293.552ZM11.0931 302.027C9.43204 302.027 8.08071 300.675 8.08071 299.014C8.08071 297.353 9.43204 296.002 11.0931 296.002C12.7541 296.002 14.1054 297.353 14.1054 299.014C14.1054 300.675 12.7541 302.027 11.0931 302.027ZM14.5472 296.163C14.2145 296.163 13.9448 295.893 13.9448 295.56C13.9448 295.227 14.2145 294.958 14.5472 294.958C14.88 294.958 15.1497 295.227 15.1497 295.56C15.1497 295.893 14.88 296.163 14.5472 296.163Z"
+                fill="white"
+                class="icon_follow_us"
+              ></path>
+              <path
+                d="M15.7266 289H6.27344C3.36572 289 1 291.366 1 294.273V303.727C1 306.634 3.36572 309 6.27344 309H15.7266C18.6343 309 21 306.634 21 303.727V294.273C21 291.366 18.6343 289 15.7266 289ZM17.4844 301.969C17.4844 303.907 15.9072 305.484 13.9688 305.484H8.03125C6.09277 305.484 4.51562 303.907 4.51562 301.969V296.031C4.51562 294.093 6.09277 292.516 8.03125 292.516H13.9688C15.9072 292.516 17.4844 294.093 17.4844 296.031V301.969Z"
+                fill="white"
+                class="icon_follow_us"
+              ></path>
+            </svg>
+          </div>
+        </aside>
+
+        <section class="hero-section">
+          <div class="hero-content">
+            <div class="large-logo-container">
+              <svg
+                width="402"
+                height="303"
+                viewBox="0 0 402 303"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="large-logo"
+              >
+                <g opacity="0.2">
+                  <path
+                    d="M129.865 303C104.192 303 81.524 298.904 61.8599 290.712C42.469 282.519 27.3112 270.64 16.3867 255.075C5.46225 239.237 0 219.848 0 196.91C0 173.971 5.46225 154.583 16.3867 138.744C27.3112 122.633 42.469 110.481 61.8599 102.288C81.524 94.0962 104.192 90 129.865 90C155.537 90 177.933 94.0962 197.051 102.288C216.442 110.481 231.599 122.633 242.524 138.744C253.448 154.583 258.911 173.971 258.911 196.91C258.911 219.848 253.448 239.237 242.524 255.075C231.599 270.64 216.442 282.519 197.051 290.712C177.933 298.904 155.537 303 129.865 303ZM129.865 262.038C143.794 262.038 156.357 259.581 167.554 254.665C179.025 249.477 188.038 242.104 194.593 232.546C201.42 222.715 204.834 210.837 204.834 196.91C204.834 182.983 201.42 171.104 194.593 161.273C188.038 151.169 179.162 143.523 167.964 138.335C156.766 133.146 144.067 130.552 129.865 130.552C115.936 130.552 103.236 133.146 91.7657 138.335C80.295 143.523 71.1458 151.033 64.318 160.863C57.4901 170.694 54.0762 182.71 54.0762 196.91C54.0762 210.837 57.3536 222.715 63.9083 232.546C70.7361 242.104 79.8854 249.477 91.3561 254.665C102.827 259.581 115.663 262.038 129.865 262.038Z"
+                    fill="#CDFF9A"
+                  ></path>
+                  <path
+                    d="M290.98 139.973V94.5058H402V298.085H348.743V139.973H290.98Z"
+                    fill="#CDFF9A"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="hero-text">
+              <p class="tagline">BEGIN BREAKING YOUR LIMIT</p>
+              <h2 class="headline">KNOW YOUR LIMITS. SKI BEYOND THEM.</h2>
+            </div>
+
+            <a href="#" class="cta-button">
+              <span class="cta-accent"></span>
+              <span class="cta-text">VIEW MORE</span>
+            </a>
+          </div>
+
+          <div class="hero-image-container">
+            <div class="slides-container">
+              <img
+                src="./image/image_banner.png"
+                alt="Skier in action"
+                class="hero-image active"
+              />
+              <img
+                src="./image/image_catalog1.png"
+                alt="Skier in action"
+                class="hero-image"
+              />
+              <img
+                src="./image/image_catalog2.png"
+                alt="Skier in action"
+                class="hero-image"
+              />
+              <img
+                src="./image/image_catalog3.png"
+                alt="Skier in action"
+                class="hero-image"
+              />
+              <img
+                src="./image/image_catalog4.png"
+                alt="Skier in action"
+                class="hero-image"
+              />
+              <img
+                src="./image/image_catalog5.png"
+                alt="Skier in action"
+                class="hero-image"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="slider-controls">
+          <button class="arrow-left">
+            <svg
+              width="54"
+              height="16"
+              viewBox="0 0 54 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M48 8H2"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M9 15L2 8L9 1"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+          <button class="arrow-right">
+            <svg
+              width="54"
+              height="16"
+              viewBox="0 0 54 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 8H52"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M45 15L52 8L45 1"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      // catalogs section
+      document
+        .getElementById("catalog-link")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const section = document.querySelector(".category-section");
+          section.style.display =
+            section.style.display === "none" ? "block" : "none";
+        });
+
+      // Slider section
+      const slides = document.querySelectorAll(".hero-image");
+      const prevButton = document.querySelector(".arrow-left");
+      const nextButton = document.querySelector(".arrow-right");
+      let currentSlide = 0;
+
+      function showSlide(n) {
+        slides.forEach((slide) => slide.classList.remove("active"));
+        currentSlide = (n + slides.length) % slides.length;
+        slides[currentSlide].classList.add("active");
+      }
+
+      function nextSlide() {
+        showSlide(currentSlide + 1);
+      }
+
+      function prevSlide() {
+        showSlide(currentSlide - 1);
+      }
+
+      nextButton.addEventListener("click", nextSlide);
+      prevButton.addEventListener("click", prevSlide);
+
+      setInterval(nextSlide, 5000);
+
+      // category section responsive for mobile
+      const catalogLink = document.getElementById("catalog-link");
+      const categorySection = document.querySelector(".category-section");
+      const mobileCloseBtn = document.querySelector(".mobile-close-btn");
+
+      function toggleCategorySection() {
+        if (window.innerWidth <= 767) {
+          categorySection.classList.toggle("active");
+          document.body.style.overflow = categorySection.classList.contains(
+            "active"
+          )
+            ? "hidden"
+            : "";
+        } else {
+          const isVisible = categorySection.style.display === "block";
+          categorySection.style.display = isVisible ? "none" : "block";
+        }
+      }
+
+      catalogLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        toggleCategorySection();
+      });
+
+      mobileCloseBtn.addEventListener("click", toggleCategorySection);
+
+      categorySection.addEventListener("click", function (e) {
+        if (e.target === categorySection) {
+          toggleCategorySection();
+        }
+      });
+
+      let lastScroll = 0;
+      categorySection.addEventListener("scroll", function () {
+        const currentScroll = window.pageYOffset;
+        if (Math.abs(lastScroll - currentScroll) > 50) {
+          toggleCategorySection();
+        }
+        lastScroll = currentScroll;
+      });
+    </script>
+  </body>
+</html>
